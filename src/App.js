@@ -43,7 +43,8 @@ export default function App() {
         if(formData.password == formData.confirmPassword){
           console.log('Successfully signed up');
         } else {
-          console.log("Passwords to not match");
+          console.log("Passwords not match");
+          return
         }
         
         if(formData.okayToEmail){
